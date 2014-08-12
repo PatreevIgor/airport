@@ -1,34 +1,30 @@
 class AutosController < ApplicationController
   before_action :set_auto, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-
-
-def layot
-  render :layout => 'input'
-end
+  layout 'input'
 
   # GET /autos
   # GET /autos.json
   def index
     @autos = Auto.all
-    render :layout => 'input'
+    
   end
 
   # GET /autos/1
   # GET /autos/1.json
   def show
-    render :layout => 'input'
+   
   end
 
   # GET /autos/new
   def new
     @auto = Auto.new
-    render :layout => 'input'
+    
   end
 
   # GET /autos/1/edit
   def edit
-    render :layout => 'input'
+   
   end
 
   # POST /autos
