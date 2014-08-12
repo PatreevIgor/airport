@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Airport</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  		
+<div class="text">
+	Стоимость вашего билета составит: 
+	<%= @cost %>
+	<p>Марка вашего самолета: <%= @auto.name %> Его скорость <%= @auto.speed %>
+	<p>Место отправления: <%= @sity1.name %> Его координаты: Х= <%= @sity1.x %> У=<%= @sity1.y %>
+	<p>Пункт прибытия: <%= @sity2.name %> Его координаты: Х= <%= @sity2.x %> У=<%= @sity2.y %>
+	<p>Расстояние: <%= @s %> у.е.
+</div>
+
+
+
+
+</body>
+</html>

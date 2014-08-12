@@ -1,0 +1,34 @@
+<div class="block5">
+
+<h10>Listing autos</h10>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Speed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<p>
+  
+  <tbody>
+    <% @autos.each do |auto| %>
+      <tr>
+
+        <td><%= auto.name %></td>
+        <td><%= auto.speed %></td>
+
+        <td><%= link_to 'Show', auto %></td>
+        <td><%= link_to 'Edit', edit_auto_path(auto) %></td>
+        <td><%= link_to 'Destroy', auto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%= link_to 'New Auto', new_auto_path %> 
+
+</div>

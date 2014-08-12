@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+ <div class="text">
+	Enter the information:
+<form action="input" method='get' name="reg">
+	<table border="0" cellspacing="12" cellpadding="12">
+		<tr>
+		<td>Select transport:</td>
+		<td><input type="text" name="transport"></td>
+		</tr>
+		<tr>
+		<td>From:</td>
+		<td><input type="text" name="start"></td>
+		</tr>
+		<tr>
+		<td>Arrival:</td>
+		<td><input type="text" name="finish"></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td><input type="submit" value="Input"></td>
+		</tr>
+	</table> 
+
+</form>
+ 			
+
+	</div>
+
+
+
+<div class="block10">
+<h10>The list of transport:</h10>
+<table>
+  <tbody>
+    <% @autos.each do |auto| %>
+      <tr>
+        <td><%= @a = auto.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<p> <%= link_to 'Add transport:', new_auto_path %>
+</div>
+
+<div class="block11">
+<h10>List of cities:</h10>
+<table>
+  <tbody>
+    <% @sities.each do |sity| %>
+      <tr>
+        <td><%= sity.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<p> <%= link_to 'Add city', new_sity_path %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

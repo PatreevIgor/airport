@@ -1,0 +1,31 @@
+<div class="block5">
+<h1>Listing sities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>X</th>
+      <th>Y</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sities.each do |sity| %>
+      <tr>
+        <td><%= sity.name %></td>
+        <td><%= sity.x %></td>
+        <td><%= sity.y %></td>
+        <td><%= link_to 'Show', sity %></td>
+        <td><%= link_to 'Edit', edit_sity_path(sity) %></td>
+        <td><%= link_to 'Destroy', sity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sity', new_sity_path %>
+</div>

@@ -1,0 +1,29 @@
+<%= form_for(@sity) do |f| %>
+  <% if @sity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sity.errors.count, "error") %> prohibited this sity from being saved:</h2>
+
+      <ul>
+      <% @sity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :x %><br>
+    <%= f.number_field :x %>
+  </div>
+  <div class="field">
+    <%= f.label :y %><br>
+    <%= f.number_field :y %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

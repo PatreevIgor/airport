@@ -1,0 +1,124 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+    body {
+  background: url(/assets/fon.jpg) no-repeat;   
+  background-size: 100%; /* Современные браузеры */
+}
+      
+    .block_devise {
+        margin-top:0px;
+        margin-left:1050px;
+   }
+
+    .block1 { 
+        margin-top:250px;
+        margin-left:50px;
+        height: 100px; 
+      }
+  
+      .block2 { 
+
+        left:350px; 
+        height: 200px; 
+        position:absolute;
+      }
+
+     .block3 { 
+      text-align: center;
+        margin-top:255px;
+        margin-bottom:20px; 
+        position:absolute;
+    }
+
+    .text { 
+      font-family: Georgia, serif;
+      font-size: 1.65em;
+      font-weight: bold;
+      font-variant: small-caps;
+      text-align: center;
+      line-height: 99%;
+      letter-spacing: -0.05em;
+      word-spacing: 0.05em;
+      text-indent: 0.9em;
+
+        position:absolute;
+        color: black;
+      font-size: 30px;
+      line-height: 0px;
+        margin-top:25px;
+        margin-left:20px; 
+    }
+
+.block5 { 
+        margin-top:15px;
+        left:50px; 
+        height: 200px; 
+        position:absolute;
+}
+.block10 { 
+        margin-top:15px;
+        left:450px; 
+        height: 200px; 
+        position:absolute;
+}
+.block11 { 
+        margin-top:15px;
+        left:650px; 
+        height: 200px; 
+        position:absolute;
+}
+.block12 { 
+        margin-top:150px;
+        left:1000px; 
+        height: 200px; 
+        position:absolute;
+}
+
+.text2 { 
+      font-family: Georgia, serif;
+      font-size: 1.65em;
+      font-weight: bold;
+      font-variant: small-caps;
+      text-align: left;
+      line-height: 99%;
+      letter-spacing: -0.05em;
+      word-spacing: 0.05em;
+      text-indent: 0.9em;
+
+        position:absolute;
+        color: black;
+      font-size: 30px;
+      line-height: 0px;
+        margin-top:0px;
+        margin-left:00px; 
+    }
+
+.h1 { 
+      font-family: Georgia, serif;
+      font-size: 1.65em;
+      font-weight: bold;
+      font-variant: small-caps;
+      text-align: left;
+      line-height: 99%;
+      letter-spacing: -0.05em;
+      word-spacing: 0.05em;
+      text-indent: 0.9em;
+
+        position:absolute;
+        color: black;
+      font-size: 30px;
+      line-height: 0px;
+        margin-top:0px;
+        margin-left:00px; 
+    }
+
+
+
+.h10 { 
+      font-family: 'MS Sans Serif', Geneva, sans-serif;
+    font-size: 0.55em;
+    text-align: left;
+    }
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Airport2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="block_devise">
+	<%= render 'layouts/user_widget' %>
+	</div>
+	<div class="block1">
+		<p class="notice"><%= notice %></p>
+  		<p class="alert"><%= alert %></p>
+
+		<%= yield %>
+		
+	  		<div class="text">
+	  		</div>
+
+  	</div>
+
+</body>
+</html>
+
+
+
+
+
+	  		<% if current_user %>
+	  			<a href="forma"><img src="/assets/forma_in.jpg" width="250" height="50" onmouseover="this.src='/assets/forma_out.jpg';" onmouseout="this.src='/assets/forma_in.jpg';"></a>
+	  	    <% end %>
